@@ -1,3 +1,3 @@
-export function processCat() {
+export function cat() {
   console.log(2);
 }
