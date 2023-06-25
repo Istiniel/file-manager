@@ -20,7 +20,7 @@ export async function os(option) {
       });
       break;
     case 'homedir':
-      result = userInfo().homedir;
+      result = homedir();
       break;
     case 'username':
       result = userInfo().username;
