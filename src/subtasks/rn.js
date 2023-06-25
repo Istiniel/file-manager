@@ -2,9 +2,9 @@ import path from 'node:path';
 import { rename } from 'node:fs/promises';
 
 export async function rn(pathToFile, newName) {
-  let inferedPath = path.resolve(pathToFile);
-  const { dir } = path.parse(inferedPath);
+  let inferredPath = path.resolve(pathToFile);
+  const { dir } = path.parse(inferredPath);
 
   const newFilePath = path.resolve(dir, newName);
-  await rename(inferedPath, newFilePath);
+  await rename(inferredPath, newFilePath);
 }
