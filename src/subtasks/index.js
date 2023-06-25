@@ -1,1 +1,1 @@
-export * as cat from './cat.js';
+export * from './cat.js';
