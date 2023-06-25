@@ -18,7 +18,6 @@ export default async function handleCommand(line) {
       await processes[processName](...args);
     }
   } catch (error) {
-    console.log(error.message);
     console.log('Operation failed');
   } finally {
     showDirName();
