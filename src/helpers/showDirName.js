@@ -1,3 +1,3 @@
 export const showDirName = () => {
-  console.log(`You are currently in ${process.cwd()}\n`);
+  console.log(`\nYou are currently in ${process.cwd()}\n`);
 };
