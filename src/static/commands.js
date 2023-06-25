@@ -21,16 +21,3 @@ export const osCommands = [
   `--username`,
   `--architecture`,
 ];
-
-// const test = {
-//   daughter: {
-//     name: '1',
-//     surname: '2',
-//   },
-//   father: {
-//     name: '2',
-//     surname: '3',
-//   },
-// };
-
-// console.table(test);
