@@ -1,16 +1,10 @@
 import path from 'node:path';
-import { up } from './index.js';
 
 export async function cd(relatedPath) {
-  if (path.isAbsolute(relatedPath)) {
-    process.chdir(relatedPath);
+  const destination = path.resolve(relatedPath);
+  if (destination.length < process.cwd().length) {
     return;
   }
 
-  if (relatedPath === '..' || relatedPath === '../') {
-    up();
-    return;
-  }
-
-  process.chdir(path.join(process.cwd() + relatedPath));
+  process.chdir(path.resolve(relatedPath));
 }
